@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Node Url Shortener</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/nus.css" type="text/css">
+  </head>
+  <body>
+    <div id="header" class="container">
+      <header class="header">
+        <p class="lead">URL shortener using Node.js</p>
+      </header><!-- /.header -->
+    </div>
+
+    <div class="container">
+      <section class="row">
+        <div class="col-md-12 form-group url-form">
+          <form class="form" id="nus">
+            <div class="row">
+              <div class="col-lg-10 input-group url-input">
+                <input id="link" name="long_url" type="text" class="form-control input-lg" placeholder="Paste a link here">
+                <span class="input-group-btn">
+                  <button class="btn btn-default btn-lg" type="submit">
+                    <span class="glyphicon glyphicon-link"></span>
+                    Shorten
+                  </button>
+                  <button class="btn btn-default btn-lg" data-clipboard-target="#link" type="button">
+                    <span class="glyphicon glyphicon-share-alt"></span>
+                    Copy
+                  </button>
+                </span>
+              </div><!-- /.input-group -->
+          </div><!--/.row-->
+          <div class="row flex-group">
+            <div class='col-lg-9 input-group date url-input flex-item' id='datetimepicker1'>
+              <input id="start_date" name="start_date" type="date" class="form-control" >
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div>
+            <div class='col-lg-9 input-group date url-input flex-item' id='datetimepicker2'>
+              <input id="end_date" name="end_date" type="date" class="form-control" >
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div>
+          </div><!--/.row-->
+        </form>
+
+        </div><!--/.form-group-->
+
+      </section>
+    </div><!-- /.container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <script src="/js/nus.js" type="text/javascript"></script>
+  </body>
+</html>
